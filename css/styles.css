@@ -13,10 +13,6 @@ body.main {
     width: 100%;
 }
 
-ul {
-    list-style-type: none;
-    margin-left: 0;
-}
 
 h1, h2, h3, h4, h5, h6, p{
     margin: 0;
@@ -79,6 +75,8 @@ img {
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .hedder-menu {
@@ -147,8 +145,10 @@ address {
 
 /* main */
 .custom-section{
-    background-color: #2e2f42;
     padding: 188px 0;
+    background: url(../images/background/7e83b6c8ee4603ea892aa8aaebb3c5fe.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .hero-text {
     color: #ffffff;
@@ -278,6 +278,7 @@ address {
     width: calc((100% - 72px) / 4);
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-name {
@@ -341,7 +342,6 @@ body.portfolio {
     justify-content: center;
     gap: 24px;
     margin-bottom: 72px;
-    padding-top: 96px; padding-bottom: 120px; 
 }
 .button-portfolio {
     font-family: "Roboto", sans-serif;
@@ -382,6 +382,9 @@ body.portfolio {
     background: white;
 }
 
+.portfolio-apps-list:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 .portfolio-apps-text {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
