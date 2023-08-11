@@ -103,18 +103,19 @@ img {
 }
 .current {
     color: #404bbf;
+    position: relative;
 }
 
 .current::after {
     position: absolute;
     bottom: -1px;
     left: 0;
-    display: block;
     height: 4px;
     width: 100%;
     content: '';
     border-radius: 2px;
     background-color: #404bbf;
+    display: block;
   }
 .nav-link {
     color: #2e2f42;
