@@ -217,6 +217,16 @@ address {
     gap: 24px;
 }
 
+.features__icon-thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 24px 0;
+    border-radius: 4px;
+    background-color: #F4F4FD;
+  }
+
 .section-two-list-order {
     width: calc((100% - 72px) / 4);
 }
