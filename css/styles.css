@@ -99,6 +99,21 @@ img {
 .list-item:focus{
     color: #404bbf;
 }
+.current {
+    color: #404bbf;
+}
+
+.current::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: block;
+    height: 4px;
+    width: 100%;
+    content: '';
+    border-radius: 2px;
+    background-color: #404bbf;
+  }
 .nav-link {
     color: #2e2f42;
     font-weight: 500;
@@ -145,10 +160,13 @@ address {
 
 /* main */
 .custom-section{
+    max-width: 1440px;
     padding: 188px 0;
-    background: url(../images/background/7e83b6c8ee4603ea892aa8aaebb3c5fe.jpg), no-repeat;
-    background-position: center;
     background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/background/7e83b6c8ee4603ea892aa8aaebb3c5fe.jpg)
 }
 .hero-text {
     color: #ffffff;
