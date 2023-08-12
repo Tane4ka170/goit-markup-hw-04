@@ -445,11 +445,13 @@ line-height: 1.11;
 .main-footer {
     display: flex;
     align-items: baseline;
-    margin-right: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .container-footer {
     margin-right: 120px;
-    margin-left: 156px;
+    margin-left: 0;
+
 }
 .logo-footer {
     display: inline-block;
