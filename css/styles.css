@@ -47,6 +47,9 @@ img {
 
 .headder-top {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .link {
@@ -101,9 +104,22 @@ img {
 .list-item:focus{
     color: #404bbf;
 }
+
+.nav-link {
+    color: #2e2f42;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: color 0.3s ease;
+    padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .current {
-    color: #404bbf;
     position: relative;
+    color: #404bbf;
+    
 }
 
 .current::after {
@@ -117,16 +133,6 @@ img {
     background-color: #404bbf;
     display: block;
   }
-.nav-link {
-    color: #2e2f42;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    transition: color 0.3s ease;
-    padding: 24px 0;
-}
-
 .nav-link:focus {
     color: #404bbf;
 }
@@ -151,6 +157,7 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link {
@@ -200,7 +207,7 @@ address {
    margin-top: 48px;
   margin: 0 auto ;
   min-width: 169px;
-
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover {
@@ -349,7 +356,7 @@ address {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #4d5ae5;
+  background-color: #4D5AE5;
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -357,12 +364,18 @@ address {
 
   .social-links__icon {
     position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  fill: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: #f4f4fd;
   }
-
+ .social-links__link:hover {
+    background-color: #404bbf;
+  } 
+  .social-links__link:focus {
+    background-color: #404bbf;
+  }
+  
   /* section 5 */
 .customers {
     padding: 120px 0;
@@ -377,6 +390,7 @@ font-weight: 700;
 line-height: 40px;
 letter-spacing: 0.72px;
 text-transform: capitalize;
+line-height: 1.11;
 }
 
 .customers__list {
@@ -390,15 +404,16 @@ text-transform: capitalize;
     width: 168px;
   height: 88px;
 }
-.customers__item {
-    flex-grow: 1;
-    padding: 16px 0;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-    text-align: center;
-  }
 
-  .customers__link {
+.customers__item {
+     flex-grow: 1;
+     padding: 16px 0;
+     border: 1px solid #8E8F99;
+     border-radius: 4px;
+     text-align: center;
+}
+
+.customers__link {
     display: flex;
   align-items: center;
   justify-content: center;
@@ -413,12 +428,11 @@ text-transform: capitalize;
   cursor: pointer;
   }
 
-  .customers__icon {
+.customers__icon {
     fill: currentColor;
   }
   .customers__link:hover,
-  .customers__linkk:focus,
-  .customers__link:active {
+  .customers__linkk:focus {
     color: #404bbf;
     border: 1px solid #404bbf;
   }
@@ -428,14 +442,14 @@ text-transform: capitalize;
     background: var(--navyblue, #2E2F42);
     padding: 100px 0;
 }
+.main-footer {
+    display: flex;
+    align-items: baseline;
+}
 .container-footer {
     margin-left: 0;
     margin-right: 120px;
     margin-left: 156px;
-}
-.main-footer {
-    display: flex;
-    align-items: baseline;
 }
 .logo-footer {
     display: inline-block;
@@ -501,7 +515,7 @@ text-transform: capitalize;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .footer-socials-link:hover,
+.footer-socials-link:hover,
   .footer-socials-link:focus {
     background-color: #31d0aa;
   }
