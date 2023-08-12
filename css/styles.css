@@ -431,6 +431,7 @@ text-transform: capitalize;
 .container-footer {
     margin-left: 0;
     margin-right: 120px;
+    margin-left: 156px;
 }
 .main-footer {
     display: flex;
