@@ -171,6 +171,7 @@ address {
 
 /* main */
 .custom-section{
+    margin: 0;
     max-width: 1440px;
     padding: 188px 0;
     background-size: cover;
@@ -460,7 +461,6 @@ line-height: 1.11;
     margin-bottom: 16px;
 }
 .logo-link-footer {
-    padding: 24px 0;
     font-family: Raleway, sans-serif;
     color: var(--iris, #4d5ae5);
     font-size: 18px;
